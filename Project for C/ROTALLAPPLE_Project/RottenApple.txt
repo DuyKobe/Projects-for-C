@@ -1,0 +1,30 @@
+Bình có 1 cái thùng bên trong gồm các ô để đặt những quá táo, các ô được xếp đều theo n hàng và m cột bên trong thùng. Trong thùng tất cả các ô đều đang chứa táo nhưng thật không may có một số ô chứa những quả táo bị hỏng. Nếu một quả táo bị hỏng thì cứ sau 1 ngày nó sẽ làm các quả táo ở gần nó hỏng theo (nếu vị trí i, j có 1 quả táo hỏng thì sau 1 ngày các quả táo ở vị trí (i + 1, j), (i - 1, j), (i, j +1), (i, j - 1) cũng sẽ bị hỏng theo). Cho biết vị trí của các quả táo hỏng trong thùng và trong thùng luôn có ít nhất 1 quả táo bị hỏng, hãy tính số ngày ít nhất để tất cả các quả táo đều bị hỏng.
+int rotAllApple(int n, int m, matrix_int positions)
+{
+
+}
+
+Ví dụ
+Với n = 2, m = 2, positions = [[1, 2]], output sẽ có dạng rotAllApple(n, m, positions) = 2.
+
+Giải thích:
+positions = [[1, 2]] với ý nghĩa quả táo hỏng đang nằm ở hàng 1 cột 2.
+Ngày thứ nhất các quả táo ở vị trí [1, 1], [2, 2] sẽ bị quả táo ở vị trí [1, 2] làm hỏng.
+Tới ngày thứ 2 quả táo ở vị trí [2, 1] cũng sẽ bị hỏng.
+
+Đầu vào/Đầu ra
+[Đầu vào] Integer n, m
+1 <= n, m <= 200
+[Đầu vào] Matrix of integer positions
+1 <= positions.size <= 200
+[Đầu ra] Integer
+
+Test case
+2,2,[[1, 1]] => 2
+1,1,[[1,1]] => 0
+5,5,[[2, 2], [1,1], [3,3], [4,4], [5,5]] => 4
+1,7,[[1, 3]] => 4
+3,7,[[2,4]] => 4
+
+
+

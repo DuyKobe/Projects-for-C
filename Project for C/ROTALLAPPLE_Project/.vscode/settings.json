@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "numbertoword": "c",
+        "covid": "c",
+        "vector": "c",
+        "xstring": "c",
+        "xutility": "c",
+        "xlocale": "c",
+        "assert.h": "c",
+        "time.h": "c",
+        "stdbool.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
